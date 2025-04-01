@@ -8,12 +8,16 @@
 :root{
        --primary-color:#47BEBA;
        --secondary-color: #F22E52;
-       --text-color-button: #FFF
-}
+       --text-color-button: #FFF;
+       --padding-button:1rem 2rem;
+    }
 
 .primary-color{
     background: var(--primary-color);
     color: var(--text-color-button);
+    padding: var(--padding-button);
+    display: inline-block;
+    border-radius: 5px;
 }
  
 .container{
@@ -36,11 +40,15 @@ h3{
 
 a{
     text-decoration: none;
+    color: #160647;
 }
 
 .secondary-color{
     background: var(--secondary-color);
     color: var(--text-color-button);
+    padding: var(--padding-button);
+    display: inline-block;
+    border-radius: 5px;
 }
 
 /* top-header */
@@ -61,9 +69,99 @@ a{
     align-items: center;
 }
 
+.top-header .logo h1{
+   margin-right: 6px;
+   display: flex;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+
 nav ul{
     display: flex;
     list-style: none;
 }
+
+nav ul li{
+    margin: 0 16px;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+}
+
+.login .primary-color{
+    margin-left: 16px;
+}
+
+/* cta */
+
+.cta{
+    padding: 208px 0;
+}
+
+.cta .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta h2{
+    font-size: 64px;
+    color: #160647;
+    text-align: center;
+}
+
+.cta p{
+    margin: 30px 0 40px;
+    width: 697px;
+    text-align: center;
+    color: #6C6C6C;
+}
+
+.cta a{
+    margin: 0 10px;
+}
+
+.cta a:hover{
+    box-shadow: 0 0 10px #AAA;
+}
+
+.brands .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.brands{
+    margin:121px;
+}
+
+.about-us .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+   
+}
+
+.about-us h4{
+    font-size: 40px;
+}
+
+.about-us-description .container{
+    margin: 400px;
+}
+
+.about-us p{
+    margin: 35px 0;
+    width: 383px;
+}
+
+
+
+
+
 
 
